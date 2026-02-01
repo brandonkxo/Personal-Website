@@ -136,7 +136,7 @@ search:
                               <g clip-path="url(#clipImageBook)">
                                   <rect x="790.5" y="610" width="254" height="300" rx="33" fill="var(--md-default-fg-color--lightest)" />
                                   <image x="796.5" y="616" width="242" height="330" href="/assets/images/index/FROTHEDPrototypeV1.jpg" preserveAspectRatio="xMidYMid slice" alt="FROTHED Prototype project image" />
-                                  <rect x="796.5" y="616" width="241" height="287" rx="27" stroke="#e5e5e5" stroke-width="14" fill="none" />
+                                  <rect x="796.5" y="616" width="241" height="287" rx="27" stroke="var(--md-default-fg-color--lighter)" stroke-opacity="0.2" stroke-width="14" fill="none" />
                               </g>
                           </g>
                         </a>
