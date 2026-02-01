@@ -694,8 +694,8 @@ header {
 .content5 .grid-item {
   height: 101px;
   border-radius: 12px;
-  border: 1.2px solid var(--md-default-fg-color--lightest);
-  background: var(--md-default-bg-color);
+  border: 1.2px solid rgba(0, 0, 0, 0.12);
+  background: var(--md-default-fg-color--lightest);
 }
 
 .content5 .grid-item {
