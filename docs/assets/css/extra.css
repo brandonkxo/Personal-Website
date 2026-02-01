@@ -1,10 +1,10 @@
 /* Beige background + grain texture (site-wide) */
 [data-md-color-scheme="default"] {
-    --md-default-bg-color: #f0e6d3;
+    --md-default-bg-color: #d4c4ad;
 }
 
 body {
-  background-color: #f0e6d3 !important;
+  background-color: #d4c4ad !important;
 }
 
 body::before {
@@ -24,7 +24,7 @@ body::before {
 
 [data-md-color-scheme="default"] body,
 [data-md-color-scheme="default"] .md-main {
-  background-color: #f0e6d3 !important;
+  background-color: #d4c4ad !important;
 }
 
 [data-md-color-scheme="slate"] body::before {
