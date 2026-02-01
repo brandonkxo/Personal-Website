@@ -1,0 +1,70 @@
+[data-md-color-scheme="slate"] {
+    --md-default-bg-color: hsla(228, 7%, 14%, 1);
+    --md-footer-bg-color--dark: hsla(228, 8%, 7%, 0.58);
+    --md-footer-bg-color: hsla(220, 7%, 7%, 1);
+    --md-code-bg-color: hsla(228, 7%, 12%, 1);
+ }
+
+/* Remove extra white space from home page */
+.md-main__inner {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.md-content {
+  margin: 0 !important;
+  padding: 0 !important;
+  max-width: 900px;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.md-content__inner {
+  margin: 0 !important;
+  padding: 0 !important;
+  max-width: 900px;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* Ensure sections have no extra spacing */
+section {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Mobile video hero needs side padding - override in mobile view */
+@media (max-width: 695px) {
+  section.mobile-video-hero {
+    margin: 2em 1rem !important;
+    padding: 0 1rem !important;
+  }
+}
+
+/* Remove any default spacing from the content container */
+.content-container {
+  gap: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Ensure the footer has no extra spacing */
+.footer {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Remove any default spacing from the experience section */
+.experience {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Ensure the main element takes up only the space it needs */
+main {
+  gap: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
