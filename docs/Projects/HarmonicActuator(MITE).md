@@ -74,21 +74,26 @@ template: project.html
 <h2 style="text-align:left; margin-top: 2em;">Thesis</h2>
 
 </center>
-My team was tasked with designing and simulating a drone capable of completeing the IAM3D payload challenge. This challenge consisted of picking up a small 100g block of PLA and racing around an obstacle course in under 15 minutes. I was selected to be the CAD / hardware engineer due to my previous experience.
+Since late 2025, I have been working nights and weekends on a bipedal humanoid. No arms or head, just the legs and torso (to house the electronics, batteries, etc). For the muscles of the humanoid, I choose to go with harmonic drives.
 
 <br>
-After a few technical reviews our team had reached our final component specs. We were using off the shelf ESCs, motors, and an electromagnet for pickup.
+Now why are harmonics so popular in humanoids and industrial robot arms?
+
+  1. Extremely precise, near zero backlash - Due to high % of teeth engaged at any one time
+  2. High reduction ratios in small diameters - can easily hit 100:1 in <100mm diameter
+  3. Lightweight components - the flex spline is a thin walled circle
 
 <br>
-<h2 style="text-align:left; margin-top: 2em;">Design</h2>
-I approached the design as I always do:
+So what are the drawbacks of these drives?
 
-1. Manufacturning method - Is it being 3D printed, injection molded, CNC
-2. Electromechanical access - All those wires need to lead to somewhere
-3. Ease of assembly / disassembly - Hard to reach places are even harder to screw bolts into
+  1. Very expensive - can be 5X the cost of a simple planetary BLDC acuator.
+  2. Very calculation intensive (more on this below)
 
 <br>
-One stipulation of this challenge was: the more parts 3D printed parts on the drone, the higher the design score. Through a few design reviews the initial concept evolved into a compact drone that consisted of 20 3d printed parts. This design had two cameras, one in the front for racing views and one in the bottom for payload views. 
+<h2 style="text-align:left; margin-top: 2em;">Calculation Hurdles</h2>
+While reading current papers on harmonic drive design, I realized there were no good calculators. All of the fatigue life calculations, along with the conjugate teeth design was most likely propeitery software at the top robotics companies. 
+
+**So I built my own:**
 
 
 <center>
@@ -126,10 +131,10 @@ One stipulation of this challenge was: the more parts 3D printed parts on the dr
 
 <h2 style="text-align:left; margin-top: 2em;">Simulation</h2>
 
-One of the main parts of our senior design was validation. Since we were not actually building or flying this drone, we were expected to validate our design and component choices using simulation. **All simulations were ran in SolidWorks flow sim.**
+One of the main hurdles in harmonic drive design is simulation validation. It is complex and timely, as each calcualator generated tooth geometry needs to be validated / tweaked using FEA. 
 
 <br>
-To ensure the batter had proper cooling I ran CFD. This was run assuming slowest flight speeds possible, as low as 2.25m/s. The results did show higher temperatures than expected around the 4S battery. This caused the team to switch from PLA to PETG for the battery standoff.
+For my simulation process I started with the flexspline cup and the wave generator (solidbody). I then ran a non linear deformation study to obtain the deformed flex spline shape. From there, I could export that deformed shape and apply a constant torque to it, to rotate it along the circular spline and get our meshing stresses.
 
 <center>
   <br>

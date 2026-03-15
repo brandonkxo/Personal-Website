@@ -27,6 +27,25 @@ body::before {
   background-color: #d4c4ad !important;
 }
 
+/* Home, projects listing, project pages, etc.: white background (1x.tech style), grain stays on */
+body:has(.featured-projects),
+body:has(.content-container),
+body:has(.return2feed),
+[data-md-color-scheme="default"] body:has(.featured-projects),
+[data-md-color-scheme="default"] body:has(.content-container),
+[data-md-color-scheme="default"] body:has(.return2feed),
+[data-md-color-scheme="default"] .md-main:has(.featured-projects),
+[data-md-color-scheme="default"] .md-main:has(.content-container),
+[data-md-color-scheme="default"] .md-main:has(.return2feed) {
+  background-color: #ffffff !important;
+}
+[data-md-color-scheme="default"]:has(.featured-projects),
+[data-md-color-scheme="default"]:has(.content-container),
+[data-md-color-scheme="default"]:has(.return2feed) {
+  --md-default-bg-color: #ffffff;
+  --md-default-fg-color--lightest: #ffffff;
+}
+
 [data-md-color-scheme="slate"] body::before {
   opacity: 0.25;
 }

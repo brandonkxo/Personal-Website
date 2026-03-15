@@ -81,9 +81,21 @@ search:
         </div>
         <hr/>-->
         <div class="writparent">
+          <a href="/Projects/HarmonicActuator(MITE)/">
+            <div class="imgparent"><img class="writeimg" src="../assets/images/MITE/cross_section.png" alt="Harmonic Drive Actuator (MITE)"></div>
+            <p class="projtitle">Harmonic Drive Actuator (MITE)</p>
+            <p class="writeyear">Spring 2026</p>
+            <span class="mobileyear">
+            <p class="readtime">—</p>
+            </span>
+            <p class="projdescription">Compact harmonic drive actuator</p>
+          </a>
+        </div>
+        <hr/>
+        <div class="writparent">
         <a href="/Projects/FROTHED/">
           <div id="frothed-project">
-            <div class="imgparent"><img class="writeimg" style="object-position: center 52.5%;" src="../assets/images/FROTHED/Skeleton2.jpeg" alt="FROTHED logo"></div>
+            <div class="imgparent"><img class="writeimg" style="object-position: center 52.5%;" src="../assets/images/FROTHED/cross1.png" alt="FROTHED logo"></div>
             <p class="projtitle">FROTHED</p>
             <p class="writeyear">Dec 2024 - June 2025</p>
             <span class="mobileyear">

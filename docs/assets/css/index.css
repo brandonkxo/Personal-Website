@@ -1,6 +1,14 @@
 /* Responsible for home page spacing */
 
+/* Home page background: match 1x.tech/ai clean white */
+body {
+  background-color: #ffffff !important;
+}
+
 :root {
+  /* Override theme vars so SVG cards/pill behind pictures are white, not beige */
+  --md-default-bg-color: #ffffff;
+  --md-default-fg-color--lightest: #ffffff;
   --duration: 1s;
   --nav-duration: calc(var(--duration) / 4);
   --ease: cubic-bezier(0.215, 0.61, 0.355, 1);

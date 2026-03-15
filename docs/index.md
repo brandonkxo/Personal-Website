@@ -133,11 +133,9 @@ search:
                         </a>
                         <a href="/projects/FROTHED">
                           <g id="reading-card" class="project">
-                              <g clip-path="url(#clipImageBook)">
-                                  <rect x="790.5" y="610" width="254" height="300" rx="33" fill="var(--md-default-fg-color--lightest)" />
-                                  <image x="796.5" y="616" width="242" height="330" href="/assets/images/index/FROTHEDPrototypeV1.jpg" preserveAspectRatio="xMidYMid slice" alt="FROTHED Prototype project image" />
-                                  <rect x="796.5" y="616" width="241" height="287" rx="27" stroke="var(--md-default-fg-color--lighter)" stroke-opacity="0.2" stroke-width="14" fill="none" />
-                              </g>
+                              <rect x="790.5" y="610" width="254" height="300" rx="33" fill="var(--md-default-fg-color--lightest)" />
+                              <rect x="791" y="610.5" width="253" height="299" rx="32.5" stroke="var(--md-default-fg-color--lighter)" stroke-opacity="0.2" />
+                              <image x="796.5" y="616" width="242" height="330" href="/assets/images/index/FROTHEDPrototypeV1.jpg" clip-path="url(#clipImageBook)" preserveAspectRatio="xMidYMid slice" alt="FROTHED Prototype project image" />
                           </g>
                         </a>
                         <a href="/Projects/Microbot/">
@@ -191,7 +189,7 @@ search:
           class="year"><span class="mobileyear">May </span>2023<span class="mobileyear"> - Aug 2023</span></p>
         <hr/>
         <a target=”_blank” href="https://www.instagram.com/alabamafsae/">
-          <img class="companylogo" src="assets/images/index/logos/FORMULASAE.png" alt="Rhythmlink International logo"><p class="company">Formula SAE</p></a><p class="role">Powertrain Team<span class="mobileyear"> R&D</span><p class="year"><span class="mobileyear">Aug </span>2021 - <span class="mobileyear">Aug </span>2022</p>
+          <img class="companylogo" src="assets/images/index/logos/FORMULASAE.png" alt="Rhythmlink International logo"><p class="company">Formula SAE</p></a><p class="role">Powertrain Engineer<span class="mobileyear"></span><p class="year"><span class="mobileyear">Aug </span>2021 - <span class="mobileyear">Aug </span>2022</p>
     </section>
     <section class="about">
       <div class="content4">
