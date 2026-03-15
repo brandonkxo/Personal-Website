@@ -417,6 +417,15 @@
   border: 1px solid var(--md-default-fg-color--lightest);
 }
 
+#frothed-project .imgparent {
+  overflow: hidden;
+}
+
+#frothed-project .writeimg {
+  transform: scale(1);
+  transform-origin: center;
+}
+
 .content6 .projtitle {
   position: relative;
   top: -13em;
