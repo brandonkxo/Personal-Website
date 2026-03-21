@@ -198,51 +198,6 @@ search:
         <p class="abt2">I've previously worked on self-driving cars, robotic actuators, and consumer hardware.</p>
       </div>
     </section>
-    <style>
-      @media (max-width: 695px) {
-        .projects {
-          margin-top: -10em;
-        }
-      }
-    </style>
-    <section class="projects">
-      <div class="content5">
-        <a href="/proj"><h2>Projects</h2></a>
-        <div class="grid-container">
-          <a href="/Projects/FROTHED/"> <div class="grid-item">
-              <p class="projtitle">FROTHED</p>
-              <p class="projdescription">Next-gen consumer hardware</p>
-              <i class="fa-solid fa-arrow-up-right-from-square"></i>
-            </div> </a>
-          <a href="/Projects/SPINPlanetaryActuator/"> <div class="grid-item">
-              <p class="projtitle">SPIN Actuator</p>
-              <p class="projdescription">5:1 Direct-Drive</p>
-              <i class="fa-solid fa-arrow-up-right-from-square"></i>
-            </div> </a>
-          <a href="/Projects/IAM3DPayloadPickup/"> <div class="grid-item">
-              <p class="projtitle">IAM3D Drone</p>
-              <p class="projdescription">Payload Pickup Drone</p>
-              <i class="fa-solid fa-arrow-up-right-from-square"></i>
-            </div> </a>
-          <a href="/Projects/Microbot/"> <div class="grid-item">
-              <p class="projtitle">MicroBot</p>
-              <p class="projdescription">6DOF robotic arm</p>
-              <i class="fa-solid fa-arrow-up-right-from-square"></i>
-            </div> </a>
-          <a href="/Projects/SelfDriving/"> <div class="grid-item">
-              <p class="projtitle">Self-driving LYRIQ</p>
-              <p class="projdescription">Level 3 autonomous control</p>
-              <i class="fa-solid fa-arrow-up-right-from-square"></i>
-            </div> </a>
-          <a href="/Projects/ApptronikArmHardware/"> <div class="grid-item">
-              <p class="projtitle">Apptronik Arm</p>
-              <p class="projdescription">Mechanical linkage analysis</p>
-              <i class="fa-solid fa-arrow-up-right-from-square"></i>
-            </div> </a>
-        </div>
-      </div>
-      <div class="mobile-spacer"></div>
-    </section>
     <section class="writing mobile-hide">
       <div class="content6" id="content6">
           </a>
