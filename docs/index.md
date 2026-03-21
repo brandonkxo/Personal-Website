@@ -82,7 +82,7 @@ search:
                                 <rect x="804.5" y="624" width="226" height="272" rx="21" />
                             </clipPath>
                             <clipPath id="clip1_107_71">
-                                <rect x="143" y="212" width="467" height="288" rx="25" />
+                                <rect x="142" y="212" width="468" height="288" rx="26" />
                             </clipPath>
                             <clipPath id="clipImage1">
                                 <rect x="1065" y="307" width="225" height="389" rx="112.5" />
@@ -143,9 +143,9 @@ search:
                                 <g clip-path="url(#clip1_107_71)">
                                     <rect x="142" y="212" width="468" height="288" rx="26" fill="var(--md-default-fg-color--lightest)" />
                                     <image x="151" y="220" width="451" height="273" href="assets/images/index/microbotsnap.jpg" clip-path="url(#clipImage4)" preserveAspectRatio="xMidYMid slice" alt="Von Niemann Probe project image" />
-                                    <rect x="151.5" y="220.5" width="450" height="272" rx="20.5" stroke="var(--md-default-fg-color--lighter)" stroke-opacity="0.2" />
+                                    <rect x="151.5" y="220.5" width="450" height="272" rx="20.5" fill="none" stroke="var(--md-default-fg-color--lighter)" stroke-opacity="0.2" />
                                 </g>
-                                <rect x="143.5" y="212.5" width="466" height="287" rx="24.5" stroke="var(--md-default-fg-color--lighter)" stroke-opacity="0.2" />
+                                <rect x="143.5" y="212.5" width="466" height="287" rx="24.5" fill="none" stroke="var(--md-default-fg-color--lighter)" stroke-opacity="0.2" />
                             </g>
                         </a>
                         <a target="_blank" href="/projects/IAM3DPayloadPickup">

@@ -431,6 +431,8 @@ header {
 .project {
   transition: all 0.3s ease;
   transform-origin: center;
+  isolation: isolate;
+  transform: translateZ(0);
 }
 
 .project.shadowbox {
