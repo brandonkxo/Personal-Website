@@ -198,12 +198,7 @@ search:
         <p class="abt2">I've previously worked on self-driving cars, robotic actuators, and consumer hardware.</p>
       </div>
     </section>
-    <section class="writing mobile-hide">
-      <div class="content6" id="content6">
-          </a>
-        </div>
-      </div>
-    </section>
+    <div class="page-spacer"></div>
     <h1 style="display:none;">Engineering Portfolio - Mechanical Design & Hardware Development</h1>
   </div>
   </main>
