@@ -161,6 +161,11 @@ header {
 }
 
 .md-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 4;
   background: none;
   box-shadow: 0 0 0 transparent, 0 0 0 transparent;
 }
