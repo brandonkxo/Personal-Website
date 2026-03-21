@@ -161,6 +161,11 @@ header {
 }
 
 .md-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 4;
   background: none;
   box-shadow: 0 0 0 transparent, 0 0 0 transparent;
 }
@@ -426,6 +431,8 @@ header {
 .project {
   transition: all 0.3s ease;
   transform-origin: center;
+  isolation: isolate;
+  transform: translateZ(0);
 }
 
 .project.shadowbox {
@@ -1497,4 +1504,23 @@ section {
 
 .footer {
   margin-top: auto;
+}
+
+.page-spacer {
+  position: absolute;
+  width: 100%;
+  height: 8em;
+  top: calc(var(--content1-height) + 24em + 20px + var(--content2-height) + 20px + var(--content3-height) + 40px + var(--content4-height) + 40px);
+}
+
+@media (max-width: 1010px) {
+  .page-spacer {
+    top: calc(var(--content1-height) + 24em + 97px + var(--content2-height) + var(--content3-height) + var(--content4-height) + 40px);
+  }
+}
+
+@media (max-width: 695px) {
+  .page-spacer {
+    top: calc(var(--content1-height) + 9.5em + var(--content3-height) + var(--content4-height) + 40px);
+  }
 }
