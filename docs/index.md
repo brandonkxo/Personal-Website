@@ -156,18 +156,18 @@ search:
                                         <div style="width:100%;height:100%;overflow:hidden;">
                                             <model-viewer
                                                 id="iam3d-viewer"
-                                                src="/assets/misc/0001-000-1200_harmonic_drive,_75nm_cont.glb"
+                                                src="/assets/misc/0001-000-1200-006_flexspline_158t.glb"
                                                 camera-controls
                                                 disable-zoom
                                                 interaction-prompt="none"
                                                 tone-mapping="neutral"
                                                 shadow-intensity="0.6"
-                                                exposure="0.325"
-                                                field-of-view="8deg"
+                                                exposure="0.375"
+                                                field-of-view="7.5deg"
                                                 camera-orbit="-45deg 75deg auto"
                                                 min-camera-orbit="auto 75deg auto"
                                                 max-camera-orbit="auto 75deg auto"
-                                                style="width:100%;height:100%;background:transparent;">
+                                                style="width:107.5%;height:100%;background:transparent;">
                                             </model-viewer>
                                         </div>
                                     </foreignObject>
