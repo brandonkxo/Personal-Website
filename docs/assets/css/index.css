@@ -484,6 +484,24 @@ header {
   transition: filter 0.3s ease;
 }
 
+/* IAM3D Model Viewer Styles */
+#iam3d-viewer {
+  --poster-color: transparent;
+  background: transparent;
+}
+
+#iam3d-viewer::part(default-progress-bar) {
+  display: none;
+}
+
+#image-card-3 foreignObject {
+  overflow: visible;
+}
+
+#image-card-3 model-viewer {
+  pointer-events: auto;
+}
+
 .content3 {
   position: absolute;
   width: 100%;
