@@ -156,18 +156,18 @@ search:
                                         <div style="width:100%;height:100%;overflow:hidden;">
                                             <model-viewer
                                                 id="iam3d-viewer"
-                                                src="/assets/misc/0001-000-1200_harmonic_drive,_75nm_cont.glb"
+                                                src="/assets/misc/0001-000-1200-006_flexspline_158t.glb"
                                                 camera-controls
                                                 disable-zoom
                                                 interaction-prompt="none"
                                                 tone-mapping="neutral"
                                                 shadow-intensity="0.6"
-                                                exposure="0.325"
-                                                field-of-view="8deg"
-                                                camera-orbit="-45deg 75deg auto"
+                                                exposure="0.6"
+                                                field-of-view="7deg"
+                                                camera-orbit="-25deg 75deg auto"
                                                 min-camera-orbit="auto 75deg auto"
                                                 max-camera-orbit="auto 75deg auto"
-                                                style="width:100%;height:100%;background:transparent;">
+                                                style="width:105%;height:100%;background:transparent;">
                                             </model-viewer>
                                         </div>
                                     </foreignObject>
@@ -215,6 +215,26 @@ search:
         <h2>About</h2>
         <p class="abt1">Mechanical Engineer with a background in robotics and hardware.</p>
         <p class="abt2">I've previously worked on self-driving cars, robotic actuators, and consumer hardware.</p>
+      </div>
+    </section>
+    <section class="footersection">
+      <div class="content5" id="content5">
+        <div class="socialpar">
+          <a target="_blank" href="https://github.com/brandonkxo" aria-label="GitHub Profile">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
+        <div class="socialpar">
+          <a target="_blank" href="https://x.com/brandonkxo" aria-label="X (Twitter) Profile">
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
+        </div>
+        <div class="socialpar">
+          <a target="_blank" href="mailto:brandonwkingwi@gmail.com" aria-label="Send Email">
+            <i class="fa-solid fa-paper-plane"></i>
+          </a>
+        </div>
+        <p class="copyright">Copyright © 2026 Brandon King</p>
       </div>
     </section>
     <div class="page-spacer"></div>
