@@ -1,10 +1,10 @@
-/* Beige background + grain texture (site-wide) */
+/* White background + grain texture (site-wide) */
 [data-md-color-scheme="default"] {
-    --md-default-bg-color: #d4c4ad;
+    --md-default-bg-color: #ffffff;
 }
 
 body {
-  background-color: #d4c4ad !important;
+  background-color: #ffffff !important;
 }
 
 body::before {
@@ -24,7 +24,7 @@ body::before {
 
 [data-md-color-scheme="default"] body,
 [data-md-color-scheme="default"] .md-main {
-  background-color: #d4c4ad !important;
+  background-color: #ffffff !important;
 }
 
 /* Home, projects listing, project pages, etc.: white background (1x.tech style), grain stays on */
