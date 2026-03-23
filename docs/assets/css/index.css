@@ -1252,9 +1252,10 @@ header {
   .mobile-video-hero {
     display: block !important;
     position: absolute;
-    top: 24em;
-    left: 0;
-    right: 0;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 6em;
     padding: 0 1.5rem !important;
     box-sizing: border-box;
   }
