@@ -68,7 +68,7 @@ search:
     </section>
     <section class="mobile-video-hero">
       <a href="https://www.deshazo.com/automation" target="_blank" class="mobile-video-link">
-        <video autoplay muted loop playsinline poster="assets/images/Deshazo/Deshazo 1.jpg" aria-label="Deshazo Automation project video">
+        <video autoplay muted loop playsinline poster="assets/images/Deshazo/DeshazoVideo1_frame1.jpg" aria-label="Deshazo Automation project video">
           <source src="assets/images/Deshazo/DeshazoVideo1.mp4" type="video/mp4">
         </video>
       </a>
@@ -123,7 +123,7 @@ search:
                               <g clip-path="url(#clipImage2)">
                                 <foreignObject x="277.5" y="527" width="492" height="328" xmlns="http://www.w3.org/1999/xhtml">
                                   <div style="width:100%;height:100%;overflow:hidden;border-radius:21px;">
-                                    <video autoplay muted loop playsinline style="width:100%;height:100%;object-fit:cover;" poster="assets/images/Deshazo/Deshazo 1.jpg" alt="Deshazo project video">
+                                    <video autoplay muted loop playsinline style="width:100%;height:100%;object-fit:cover;" poster="assets/images/Deshazo/DeshazoVideo1_frame1.jpg" alt="Deshazo project video">
                                       <source src="assets/images/Deshazo/DeshazoVideo1.mp4" type="video/mp4">
                                     </video>
                                   </div>
