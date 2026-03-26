@@ -498,6 +498,10 @@ header {
   overflow: visible;
 }
 
+#image-card-3 image {
+  transition: opacity 0.3s ease;
+}
+
 #image-card-3 model-viewer {
   pointer-events: auto;
 }

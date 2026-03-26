@@ -132,16 +132,35 @@ document.addEventListener("DOMContentLoaded", function() {
     const spinElement = document.getElementById('spin-animation');
     if (spinElement) {
         spinElement.innerHTML = `
-            <video 
-                autoplay 
-                loop 
-                muted 
-                playsinline 
+            <video
+                autoplay
+                loop
+                muted
+                playsinline
                 style="width: 100%; height: 100%; object-fit: contain;"
             >
                 <source src="assets/images/index/spin_transparent.webm" type="video/webm">
             </video>
         `;
+    }
+
+    // MITE image rotation - rotate between two images every 7 seconds
+    const miteImages = [
+        'assets/images/MITE/PCB/KicadView.png',
+        'assets/images/MITE/Exploded/Explode1.png'
+    ];
+    let miteImageIndex = 0;
+    const miteImageElement = document.querySelector('#image-card-3 image');
+
+    if (miteImageElement) {
+        setInterval(() => {
+            miteImageIndex = (miteImageIndex + 1) % miteImages.length;
+            miteImageElement.style.opacity = '0';
+            setTimeout(() => {
+                miteImageElement.setAttribute('href', miteImages[miteImageIndex]);
+                miteImageElement.style.opacity = '1';
+            }, 300);
+        }, 7000);
     }
 });
 
