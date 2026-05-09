@@ -50,6 +50,7 @@ search:
     <ul>
       <li><a class="home" href="/"><span class="navnum">01</span> Home</a></li>
       <li><a class="proj" href="/proj/"><span class="navnum">02</span> Projects</a></li>
+      <li><a class="proj" href="/writ/"><span class="navnum">03</span> Writings</a></li>
     </ul>
   </nav>
   
