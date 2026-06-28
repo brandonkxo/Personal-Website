@@ -124,18 +124,8 @@ search:
                                 </a>
                             </g>
 
-                            <!-- Card 1: MITE Exploded View (centered, non-clickable) -->
-                            <g class="carousel-card" data-index="1" id="card-mite-exploded" transform="translate(720, 512) scale(0.8) translate(-524, -691)">
-                                <g class="project">
-                                    <rect x="269.5" y="520" width="508" height="342" rx="26" fill="var(--md-default-fg-color--lightest)" />
-                                    <rect x="270" y="520.5" width="507" height="341" rx="25.5" stroke="var(--md-default-fg-color--lighter)" stroke-opacity="0.2" />
-                                    <image x="277.5" y="527" width="492" height="328" href="assets/images/MITE/Ref Images/explodedmite.jpg" clip-path="url(#clipImage2)" preserveAspectRatio="xMidYMid slice" alt="MITE Exploded View" />
-                                    <rect x="278" y="527.5" width="491" height="327" rx="20.5" stroke="var(--md-default-fg-color--lighter)" stroke-opacity="0.2" />
-                                </g>
-                            </g>
-
-                            <!-- Card 2: Apptronik Arm (centered, same size as MITE L-shape) -->
-                            <g class="carousel-card" data-index="2" id="card-apptronik" transform="translate(-114, 161)">
+                            <!-- Card 1: Flexspline (centered, same size as MITE L-shape) -->
+                            <g class="carousel-card" data-index="1" id="card-apptronik" transform="translate(-114, 161)">
                                 <a href="/Projects/ApptronikArmHardware/">
                                     <g id="image-card-1" class="project">
                                         <path d="M848.04 107H818.96H652.485C644.615 107 640.679 107 637.673 108.503C635.029 109.825 632.879 111.935 631.532 114.53C630 117.48 630 121.342 630 129.066V477.986C630 485.71 630 489.572 631.532 492.522C632.879 495.117 635.029 497.227 637.673 498.549C640.679 500.052 644.615 500.052 652.485 500.052H750.262H760.035C780.16 500.052 796.475 516.367 796.475 536.493V572.934C796.475 580.658 796.475 584.52 798.007 587.47C799.354 590.065 801.504 592.175 804.149 593.497C807.155 595 811.09 595 818.96 595H818.96H1014.52H1014.52C1022.39 595 1026.32 595 1029.33 593.497C1031.97 592.175 1034.12 590.065 1035.47 587.47C1037 584.52 1037 580.658 1037 572.934V129.066V129.066C1037 121.342 1037 117.48 1035.47 114.53C1034.12 111.935 1031.97 109.825 1029.33 108.503C1026.32 107 1022.39 107 1014.52 107H848.04Z" fill="var(--md-default-fg-color--lightest)" stroke="var(--md-default-fg-color--lighter)" stroke-opacity="0.2" />
@@ -145,8 +135,8 @@ search:
                                 </a>
                             </g>
 
-                            <!-- Card 3: FROTHED (centered) -->
-                            <g class="carousel-card" data-index="3" id="card-frothed" transform="translate(-198, -248)">
+                            <!-- Card 2: FROTHED (centered, scaled 1.5x) -->
+                            <g class="carousel-card" data-index="2" id="card-frothed" transform="translate(720, 512) scale(1.5) translate(-918, -760)">
                                 <a href="/projects/FROTHED">
                                   <g id="reading-card" class="project">
                                       <rect x="790.5" y="610" width="254" height="300" rx="33" fill="var(--md-default-fg-color--lightest)" />
@@ -156,8 +146,8 @@ search:
                                 </a>
                             </g>
 
-                            <!-- Card 4: Microbot (centered) -->
-                            <g class="carousel-card" data-index="4" id="card-microbot" transform="translate(344, 156)">
+                            <!-- Card 3: Microbot (centered) -->
+                            <g class="carousel-card" data-index="3" id="card-microbot" transform="translate(344, 156)">
                                 <a href="/Projects/Microbot/">
                                     <g id="image-card-4" class="project">
                                         <g clip-path="url(#clip1_107_71)">
@@ -170,8 +160,8 @@ search:
                                 </a>
                             </g>
 
-                            <!-- Card 5: MITE/Harmonic Actuator (centered) -->
-                            <g class="carousel-card" data-index="5" id="card-mite" transform="translate(-114, 161)">
+                            <!-- Card 4: MITE/Harmonic Actuator (centered) -->
+                            <g class="carousel-card" data-index="4" id="card-mite" transform="translate(-114, 161)">
                                 <a href="/Projects/HarmonicActuator/">
                                     <g id="image-card-3" class="project">
                                         <path d="M848.04 107H818.96H652.485C644.615 107 640.679 107 637.673 108.503C635.029 109.825 632.879 111.935 631.532 114.53C630 117.48 630 121.342 630 129.066V477.986C630 485.71 630 489.572 631.532 492.522C632.879 495.117 635.029 497.227 637.673 498.549C640.679 500.052 644.615 500.052 652.485 500.052H750.262H760.035C780.16 500.052 796.475 516.367 796.475 536.493V572.934C796.475 580.658 796.475 584.52 798.007 587.47C799.354 590.065 801.504 592.175 804.149 593.497C807.155 595 811.09 595 818.96 595H818.96H1014.52H1014.52C1022.39 595 1026.32 595 1029.33 593.497C1031.97 592.175 1034.12 590.065 1035.47 587.47C1037 584.52 1037 580.658 1037 572.934V129.066V129.066C1037 121.342 1037 117.48 1035.47 114.53C1034.12 111.935 1031.97 109.825 1029.33 108.503C1026.32 107 1022.39 107 1014.52 107H848.04Z" fill="var(--md-default-fg-color--lightest)" stroke="var(--md-default-fg-color--lighter)" stroke-opacity="0.2" />
