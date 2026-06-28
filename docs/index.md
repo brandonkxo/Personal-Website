@@ -102,6 +102,7 @@ search:
                             </clipPath>
                             <path id="circlePath" d="M 1137 797 m -50, 0 a 50,50 0 1,1 100,0 a 50,50 0 1,1 -100,0" />
                         </defs>
+                        <!-- Title stays visible always -->
                         <a href="/proj">
                             <g id="title-group" class="title">
                                 <rect x="141" y="143" width="224" height="49" rx="24.5" fill="var(--md-default-bg-color)" />
@@ -109,62 +110,96 @@ search:
                                 <text x="253" y="175" fill="var(--md-default-fg-color--light)" text-anchor="middle" font-family="Crimson Pro" font-size="23" font-style="normal" font-weight="300" line-height="109.588%">Some of my work...</text>
                             </g>
                         </a>
-                        <a href="/Projects/ApptronikArmHardware/">
-                            <g id="image-card-1" class="project">
-                                <rect x="1057" y="299" width="240" height="405" rx="120" fill="var(--md-default-fg-color--lightest)" />
-                                <rect x="1057.5" y="299.5" width="239" height="404" rx="119.5" stroke="var(--md-default-fg-color--lighter)" stroke-opacity="0.2" />
-                                <image x="1065" y="307" width="235" height="395" href="assets/images/index/ApptronikArm.jpg" clip-path="url(#clipImage1)" preserveAspectRatio="xMidYMid slice" alt="Apptronik Arm project image" />
+
+                        <!-- Carousel container -->
+                        <g id="carousel-cards">
+                            <!-- Card 0: Deshazo video (centered) -->
+                            <g class="carousel-card active" data-index="0" id="card-deshazo" transform="translate(196, -179)">
+                                <a href="https://www.deshazo.com/automation">
+                                  <g id="image-card-2" class="project">
+                                      <rect x="269.5" y="520" width="508" height="342" rx="26" fill="var(--md-default-fg-color--lightest)" />
+                                      <rect x="270" y="520.5" width="507" height="341" rx="25.5" stroke="var(--md-default-fg-color--lighter)" stroke-opacity="0.2" />
+                                      <g clip-path="url(#clipImage2)">
+                                        <foreignObject x="277.5" y="527" width="492" height="328" xmlns="http://www.w3.org/1999/xhtml">
+                                          <div style="width:100%;height:100%;overflow:hidden;border-radius:21px;">
+                                            <video autoplay muted loop playsinline style="width:100%;height:100%;object-fit:cover;" poster="assets/images/Deshazo/DeshazoVideo1_frame1.jpg" alt="Deshazo project video">
+                                              <source src="assets/images/Deshazo/DeshazoVideo1.mp4" type="video/mp4">
+                                            </video>
+                                          </div>
+                                        </foreignObject>
+                                      </g>
+                                      <rect x="278" y="527.5" width="491" height="327" rx="20.5" stroke="var(--md-default-fg-color--lighter)" stroke-opacity="0.2" />
+                                  </g>
+                                </a>
                             </g>
-                        </a>
-                        <a href="https://www.deshazo.com/automation">
-                          <g id="image-card-2" class="project">
-                              <rect x="269.5" y="520" width="508" height="342" rx="26" fill="var(--md-default-fg-color--lightest)" />
-                              <rect x="270" y="520.5" width="507" height="341" rx="25.5" stroke="var(--md-default-fg-color--lighter)" stroke-opacity="0.2" />
-                              <g clip-path="url(#clipImage2)">
-                                <foreignObject x="277.5" y="527" width="492" height="328" xmlns="http://www.w3.org/1999/xhtml">
-                                  <div style="width:100%;height:100%;overflow:hidden;border-radius:21px;">
-                                    <video autoplay muted loop playsinline style="width:100%;height:100%;object-fit:cover;" poster="assets/images/Deshazo/DeshazoVideo1_frame1.jpg" alt="Deshazo project video">
-                                      <source src="assets/images/Deshazo/DeshazoVideo1.mp4" type="video/mp4">
-                                    </video>
-                                  </div>
-                                </foreignObject>
-                              </g>
-                              <rect x="278" y="527.5" width="491" height="327" rx="20.5" stroke="var(--md-default-fg-color--lighter)" stroke-opacity="0.2" />
-                          </g>
-                        </a>
-                        <a href="/projects/FROTHED">
-                          <g id="reading-card" class="project">
-                              <rect x="790.5" y="610" width="254" height="300" rx="33" fill="var(--md-default-fg-color--lightest)" />
-                              <rect x="791" y="610.5" width="253" height="299" rx="32.5" stroke="var(--md-default-fg-color--lighter)" stroke-opacity="0.2" />
-                              <image x="796.5" y="616" width="242" height="330" href="/assets/images/index/FROTHEDPrototypeV1.jpg" clip-path="url(#clipImageBook)" preserveAspectRatio="xMidYMid slice" alt="FROTHED Prototype project image" />
-                          </g>
-                        </a>
-                        <a href="/Projects/Microbot/">
-                            <g id="image-card-4" class="project">
-                                <g clip-path="url(#clip1_107_71)">
-                                    <rect x="142" y="212" width="468" height="288" rx="26" fill="var(--md-default-fg-color--lightest)" />
-                                    <image x="151" y="220" width="451" height="273" href="assets/images/index/microbotsnap.jpg" clip-path="url(#clipImage4)" preserveAspectRatio="xMidYMid slice" alt="Von Niemann Probe project image" />
-                                    <rect x="151.5" y="220.5" width="450" height="272" rx="20.5" fill="none" stroke="var(--md-default-fg-color--lighter)" stroke-opacity="0.2" />
-                                </g>
-                                <rect x="143.5" y="212.5" width="466" height="287" rx="24.5" fill="none" stroke="var(--md-default-fg-color--lighter)" stroke-opacity="0.2" />
+
+                            <!-- Card 1: Apptronik Arm (centered) -->
+                            <g class="carousel-card" data-index="1" id="card-apptronik" transform="translate(-457, 10)">
+                                <a href="/Projects/ApptronikArmHardware/">
+                                    <g id="image-card-1" class="project">
+                                        <rect x="1057" y="299" width="240" height="405" rx="120" fill="var(--md-default-fg-color--lightest)" />
+                                        <rect x="1057.5" y="299.5" width="239" height="404" rx="119.5" stroke="var(--md-default-fg-color--lighter)" stroke-opacity="0.2" />
+                                        <image x="1065" y="307" width="235" height="395" href="assets/images/index/ApptronikArm.jpg" clip-path="url(#clipImage1)" preserveAspectRatio="xMidYMid slice" alt="Apptronik Arm project image" />
+                                    </g>
+                                </a>
                             </g>
-                        </a>
-                        <a href="/Projects/HarmonicActuator/">
-                            <g id="image-card-3" class="project">
-                                <path d="M848.04 107H818.96H652.485C644.615 107 640.679 107 637.673 108.503C635.029 109.825 632.879 111.935 631.532 114.53C630 117.48 630 121.342 630 129.066V477.986C630 485.71 630 489.572 631.532 492.522C632.879 495.117 635.029 497.227 637.673 498.549C640.679 500.052 644.615 500.052 652.485 500.052H750.262H760.035C780.16 500.052 796.475 516.367 796.475 536.493V572.934C796.475 580.658 796.475 584.52 798.007 587.47C799.354 590.065 801.504 592.175 804.149 593.497C807.155 595 811.09 595 818.96 595H818.96H1014.52H1014.52C1022.39 595 1026.32 595 1029.33 593.497C1031.97 592.175 1034.12 590.065 1035.47 587.47C1037 584.52 1037 580.658 1037 572.934V129.066V129.066C1037 121.342 1037 117.48 1035.47 114.53C1034.12 111.935 1031.97 109.825 1029.33 108.503C1026.32 107 1022.39 107 1014.52 107H848.04Z" fill="var(--md-default-fg-color--lightest)" stroke="var(--md-default-fg-color--lighter)" stroke-opacity="0.2" />
-                                <image x="638" y="115" width="391" height="477" href="assets/images/MITE/PCB/KicadView.png" clip-path="url(#clipImageTone)" preserveAspectRatio="xMidYMid slice" alt="MITE project image" />
-                                <path d="M847.468 115H819.532H658.601H649.2C645.28 115 643.319 115 641.822 115.763C640.505 116.434 639.434 117.505 638.763 118.822C638 120.319 638 122.28 638 126.2V135.343V470.823V480.8C638 484.72 638 486.681 638.763 488.178C639.434 489.495 640.505 490.566 641.822 491.237C643.319 492 645.28 492.165 649.2 492.165H659.601H749.535H759.685C760.842 492.165 761.42 492.165 761.909 492.176C784.891 492.699 803.397 511.205 803.92 534.187C803.931 534.676 803.931 535.254 803.931 536.411V565.657V575.731C803.931 579.651 804 581.681 804.763 583.178C805.434 584.495 806.505 585.566 807.822 586.237C809.319 587 811.28 587 815.2 587L825.463 586.931L1007.4 587H1017.8C1021.72 587 1023.68 587 1025.18 586.237C1026.5 585.566 1027.57 584.495 1028.24 583.178C1029 581.681 1029 579.72 1029 575.8V565.657V136.343V126.2C1029 122.28 1029 120.319 1028.24 118.822C1027.57 117.505 1026.5 116.434 1025.18 115.763C1023.68 115 1021.72 115 1017.8 115H1007.4H847.468Z" fill="none" stroke="var(--md-default-fg-color--lighter)" stroke-opacity="0.2" />
+
+                            <!-- Card 2: FROTHED (centered) -->
+                            <g class="carousel-card" data-index="2" id="card-frothed" transform="translate(-198, -248)">
+                                <a href="/projects/FROTHED">
+                                  <g id="reading-card" class="project">
+                                      <rect x="790.5" y="610" width="254" height="300" rx="33" fill="var(--md-default-fg-color--lightest)" />
+                                      <rect x="791" y="610.5" width="253" height="299" rx="32.5" stroke="var(--md-default-fg-color--lighter)" stroke-opacity="0.2" />
+                                      <image x="796.5" y="616" width="242" height="330" href="/assets/images/index/FROTHEDPrototypeV1.jpg" clip-path="url(#clipImageBook)" preserveAspectRatio="xMidYMid slice" alt="FROTHED Prototype project image" />
+                                  </g>
+                                </a>
                             </g>
-                        </a>
-                        <a class="circleLink" href="/projects/SPINPlanetaryActuator">
-                            <g transform="translate(1137, 775)">
-                                <foreignObject x="-50" y="-50" width="100" height="100">
-                                    <div id="spin-animation"></div>
-                                </foreignObject>
+
+                            <!-- Card 3: Microbot (centered) -->
+                            <g class="carousel-card" data-index="3" id="card-microbot" transform="translate(344, 156)">
+                                <a href="/Projects/Microbot/">
+                                    <g id="image-card-4" class="project">
+                                        <g clip-path="url(#clip1_107_71)">
+                                            <rect x="142" y="212" width="468" height="288" rx="26" fill="var(--md-default-fg-color--lightest)" />
+                                            <image x="151" y="220" width="451" height="273" href="assets/images/index/microbotsnap.jpg" clip-path="url(#clipImage4)" preserveAspectRatio="xMidYMid slice" alt="Microbot project image" />
+                                            <rect x="151.5" y="220.5" width="450" height="272" rx="20.5" fill="none" stroke="var(--md-default-fg-color--lighter)" stroke-opacity="0.2" />
+                                        </g>
+                                        <rect x="143.5" y="212.5" width="466" height="287" rx="24.5" fill="none" stroke="var(--md-default-fg-color--lighter)" stroke-opacity="0.2" />
+                                    </g>
+                                </a>
                             </g>
-                        </a>
+
+                            <!-- Card 4: MITE/Harmonic Actuator (centered) -->
+                            <g class="carousel-card" data-index="4" id="card-mite" transform="translate(-114, 161)">
+                                <a href="/Projects/HarmonicActuator/">
+                                    <g id="image-card-3" class="project">
+                                        <path d="M848.04 107H818.96H652.485C644.615 107 640.679 107 637.673 108.503C635.029 109.825 632.879 111.935 631.532 114.53C630 117.48 630 121.342 630 129.066V477.986C630 485.71 630 489.572 631.532 492.522C632.879 495.117 635.029 497.227 637.673 498.549C640.679 500.052 644.615 500.052 652.485 500.052H750.262H760.035C780.16 500.052 796.475 516.367 796.475 536.493V572.934C796.475 580.658 796.475 584.52 798.007 587.47C799.354 590.065 801.504 592.175 804.149 593.497C807.155 595 811.09 595 818.96 595H818.96H1014.52H1014.52C1022.39 595 1026.32 595 1029.33 593.497C1031.97 592.175 1034.12 590.065 1035.47 587.47C1037 584.52 1037 580.658 1037 572.934V129.066V129.066C1037 121.342 1037 117.48 1035.47 114.53C1034.12 111.935 1031.97 109.825 1029.33 108.503C1026.32 107 1022.39 107 1014.52 107H848.04Z" fill="var(--md-default-fg-color--lightest)" stroke="var(--md-default-fg-color--lighter)" stroke-opacity="0.2" />
+                                        <image x="638" y="115" width="391" height="477" href="assets/images/MITE/PCB/KicadView.png" clip-path="url(#clipImageTone)" preserveAspectRatio="xMidYMid slice" alt="MITE project image" />
+                                        <path d="M847.468 115H819.532H658.601H649.2C645.28 115 643.319 115 641.822 115.763C640.505 116.434 639.434 117.505 638.763 118.822C638 120.319 638 122.28 638 126.2V135.343V470.823V480.8C638 484.72 638 486.681 638.763 488.178C639.434 489.495 640.505 490.566 641.822 491.237C643.319 492 645.28 492.165 649.2 492.165H659.601H749.535H759.685C760.842 492.165 761.42 492.165 761.909 492.176C784.891 492.699 803.397 511.205 803.92 534.187C803.931 534.676 803.931 535.254 803.931 536.411V565.657V575.731C803.931 579.651 804 581.681 804.763 583.178C805.434 584.495 806.505 585.566 807.822 586.237C809.319 587 811.28 587 815.2 587L825.463 586.931L1007.4 587H1017.8C1021.72 587 1023.68 587 1025.18 586.237C1026.5 585.566 1027.57 584.495 1028.24 583.178C1029 581.681 1029 579.72 1029 575.8V565.657V136.343V126.2C1029 122.28 1029 120.319 1028.24 118.822C1027.57 117.505 1026.5 116.434 1025.18 115.763C1023.68 115 1021.72 115 1017.8 115H1007.4H847.468Z" fill="none" stroke="var(--md-default-fg-color--lighter)" stroke-opacity="0.2" />
+                                    </g>
+                                </a>
+                            </g>
+
+                            <!-- Card 5: SPIN (centered) -->
+                            <g class="carousel-card" data-index="5" id="card-spin" transform="translate(-417, -263)">
+                                <a class="circleLink" href="/projects/SPINPlanetaryActuator">
+                                    <g transform="translate(1137, 775)">
+                                        <foreignObject x="-50" y="-50" width="100" height="100">
+                                            <div id="spin-animation"></div>
+                                        </foreignObject>
+                                    </g>
+                                </a>
+                            </g>
+                        </g>
                     </svg>
                 </div>
+                <!-- Carousel navigation arrows -->
+                <button class="carousel-arrow carousel-prev" aria-label="Previous project">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <button class="carousel-arrow carousel-next" aria-label="Next project">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
             </div>
         </div>
     </section>

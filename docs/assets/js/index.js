@@ -147,7 +147,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // MITE image rotation - rotate between two images every 7 seconds
     const miteImages = [
         'assets/images/MITE/PCB/KicadView.png',
-        'assets/images/MITE/Exploded/Explode1.png'
+        'assets/images/MITE/Ref%20Images/straingaugeboard1.jpg'
     ];
     let miteImageIndex = 0;
     const miteImageElement = document.querySelector('#image-card-3 image');
@@ -161,6 +161,34 @@ document.addEventListener("DOMContentLoaded", function() {
                 miteImageElement.style.opacity = '1';
             }, 300);
         }, 7000);
+    }
+
+    // Carousel functionality
+    const carouselCards = document.querySelectorAll('.carousel-card');
+    const prevBtn = document.querySelector('.carousel-prev');
+    const nextBtn = document.querySelector('.carousel-next');
+    let currentIndex = 0;
+
+    function showCard(index) {
+        carouselCards.forEach((card, i) => {
+            card.classList.toggle('active', i === index);
+        });
+        currentIndex = index;
+    }
+
+    if (prevBtn && nextBtn && carouselCards.length > 0) {
+        prevBtn.addEventListener('click', () => {
+            const newIndex = (currentIndex - 1 + carouselCards.length) % carouselCards.length;
+            showCard(newIndex);
+        });
+
+        nextBtn.addEventListener('click', () => {
+            const newIndex = (currentIndex + 1) % carouselCards.length;
+            showCard(newIndex);
+        });
+
+        // Initialize with first card (Deshazo)
+        showCard(0);
     }
 });
 
@@ -178,15 +206,22 @@ function togglemenu() {
 
 function leftrevon() {
     var element = document.querySelector('.circleGroup');
-    element.style.setProperty('--rotation-direction', 'normal');
+    if (element) {
+        element.style.setProperty('--rotation-direction', 'normal');
+    }
 }
 
 function leftrevoff() {
     var element = document.querySelector('.circleGroup');
-    element.style.setProperty('--rotation-direction', 'reverse');
+    if (element) {
+        element.style.setProperty('--rotation-direction', 'reverse');
+    }
 }
 
-leftrevon();
-
-document.querySelector('.abtbtn').addEventListener('mouseenter', leftrevoff);
-document.querySelector('.abtbtn').addEventListener('mouseleave', leftrevon);
+// Only set up rotation handlers if the element exists
+var abtbtnElement = document.querySelector('.abtbtn');
+if (abtbtnElement) {
+    leftrevon();
+    abtbtnElement.addEventListener('mouseenter', leftrevoff);
+    abtbtnElement.addEventListener('mouseleave', leftrevon);
+}
