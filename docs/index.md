@@ -102,17 +102,8 @@ search:
                             </clipPath>
                             <path id="circlePath" d="M 1137 797 m -50, 0 a 50,50 0 1,1 100,0 a 50,50 0 1,1 -100,0" />
                         </defs>
-                        <!-- Title stays visible always -->
-                        <a href="/proj">
-                            <g id="title-group" class="title">
-                                <rect x="141" y="143" width="224" height="49" rx="24.5" fill="var(--md-default-bg-color)" />
-                                <rect x="141.5" y="143.5" width="223" height="48" rx="24" stroke="var(--md-default-fg-color--lighter)" />
-                                <text x="253" y="175" fill="var(--md-default-fg-color--light)" text-anchor="middle" font-family="Crimson Pro" font-size="23" font-style="normal" font-weight="300" line-height="109.588%">Some of my work...</text>
-                            </g>
-                        </a>
-
-                        <!-- Carousel container -->
-                        <g id="carousel-cards">
+                        <!-- Carousel container - scaled 2x from center -->
+                        <g id="carousel-cards" transform="translate(720, 512) scale(1.65) translate(-720, -512)">
                             <!-- Card 0: Deshazo video (centered) -->
                             <g class="carousel-card active" data-index="0" id="card-deshazo" transform="translate(196, -179)">
                                 <a href="https://www.deshazo.com/automation">
@@ -180,16 +171,6 @@ search:
                                 </a>
                             </g>
 
-                            <!-- Card 5: SPIN (centered) -->
-                            <g class="carousel-card" data-index="5" id="card-spin" transform="translate(-417, -263)">
-                                <a class="circleLink" href="/projects/SPINPlanetaryActuator">
-                                    <g transform="translate(1137, 775)">
-                                        <foreignObject x="-50" y="-50" width="100" height="100">
-                                            <div id="spin-animation"></div>
-                                        </foreignObject>
-                                    </g>
-                                </a>
-                            </g>
                         </g>
                     </svg>
                 </div>
