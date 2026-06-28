@@ -407,7 +407,7 @@ header {
 }
 
 .featured-projects {
-  margin-top: 14em;
+  margin-top: 10em;
 }
 
 .experience {
@@ -425,7 +425,7 @@ header {
   margin-bottom: 0;
   padding-left: 7em;
   padding-right: 7em;
-  top: calc(var(--content1-height) + 24em + 20px);
+  top: calc(var(--content1-height) + 20em + 20px);
 }
 
 .project {
@@ -515,7 +515,7 @@ header {
   transform: translateX(-50%);
   padding-left: 7em;
   padding-right: 7em;
-  top: calc(var(--content1-height) + 24em + 10px + var(--content2-height));
+  top: calc(var(--content1-height) + 20em + 20px + var(--content2-height));
 }
 
 .content3 h2 {
