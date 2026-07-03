@@ -177,7 +177,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const cardDescriptions = {
         'card-apptronik': {
             title: 'Flexspline',
-            description: 'A custom harmonic drive flexspline designed for high torque density applications. Machined from steel with precise tooth geometry for smooth power transmission.'
+            description: 'Developed custom S-tooth design software for my harmonic drive actuator. Open-sourced it here: <a href="https://www.harmonicgearboxcalculator.com" target="_blank">harmonicgearboxcalculator.com</a>'
         },
         'card-frothed': {
             title: 'FROTHED',
@@ -208,7 +208,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 e.stopPropagation();
                 const info = cardDescriptions[cardId];
                 modalTitle.textContent = info.title;
-                modalDescription.textContent = info.description;
+                modalDescription.innerHTML = info.description;
                 modal.classList.add('active');
             });
         }

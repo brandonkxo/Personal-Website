@@ -1673,3 +1673,14 @@ section {
   color: var(--md-default-fg-color);
   opacity: 0.85;
 }
+
+.card-modal-content a {
+  color: var(--md-accent-fg-color, #526cfe);
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.card-modal-content a:hover {
+  opacity: 0.7;
+  text-decoration: underline;
+}
