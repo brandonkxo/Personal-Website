@@ -181,15 +181,15 @@ document.addEventListener("DOMContentLoaded", function() {
         },
         'card-frothed': {
             title: 'FROTHED',
-            description: 'An automated matcha preparation system. Combines precise powder dispensing with traditional whisking techniques to create consistent, high-quality matcha.'
+            description: 'Designed the world\'s first automatic matcha maker, from sketch to prototype in 2 months. Delivered demos to investors, accelerators, etc.'
         },
         'card-microbot': {
             title: 'Microbot',
-            description: 'A compact 6-DOF robotic arm designed for desktop automation. Features custom motor controllers and a lightweight aluminum structure.'
+            description: 'A compact 6-DOF robotic arm designed for desktop automation. Printed in PETG with low cost controllers and motors (because I was a broke college student).'
         },
         'card-mite': {
             title: 'Torque-Sensing Board',
-            description: 'A custom PCB for measuring torque in robotic joints. Integrates strain gauge amplification with CAN bus communication for real-time feedback.'
+            description: 'An STM32 based board for measuring torque in robotic joints. Integrates strain gauge amplification with CAN bus communication for real-time torque feedback.'
         }
     };
 
