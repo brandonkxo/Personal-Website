@@ -197,7 +197,7 @@ search:
           class="year"><span class="mobileyear">May </span>2023<span class="mobileyear"> - Aug 2023</span></p>
         <hr/>
         <a target=”_blank” href="https://www.instagram.com/alabamafsae/">
-          <img class="companylogo" src="assets/images/index/logos/FORMULASAE.png" alt="Rhythmlink International logo"><p class="company">Formula SAE</p></a><p class="role">Powertrain Engineer<span class="mobileyear"></span><p class="year"><span class="mobileyear">Aug </span>2021 - <span class="mobileyear">Aug </span>2022</p>
+          <img class="companylogo" src="assets/images/index/logos/FORMULASAE.png" alt="Rhythmlink International logo"><p class="company">Formula SAE</p></a><p class="role">Powertrain Engineer<span class="mobileyear"></span><p class="year"><span class="mobileyear">Aug </span>2021<span class="mobileyear"> - Aug 2022</span></p>
     </section>
     <section class="about">
       <div class="content4">
