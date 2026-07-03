@@ -50,8 +50,7 @@ search:
   <nav class="main-navigation">
     <ul>
       <li><a class="home" href="/"><span class="navnum">01</span> Home</a></li>
-      <li><a class="proj" href="/proj/"><span class="navnum">02</span> Projects</a></li>
-      <li><a class="proj" href="/writ/"><span class="navnum">03</span> Writings</a></li>
+      <li><a class="proj" href="/writ/"><span class="navnum">02</span> Writings</a></li>
     </ul>
   </nav>
   
@@ -106,7 +105,6 @@ search:
                         <g id="carousel-cards" transform="translate(720, 512) scale(1.65) translate(-720, -512)">
                             <!-- Card 0: Deshazo video (centered) -->
                             <g class="carousel-card active" data-index="0" id="card-deshazo" transform="translate(196, -179)">
-                                <a href="https://www.deshazo.com/automation">
                                   <g id="image-card-2" class="project">
                                       <rect x="269.5" y="520" width="508" height="342" rx="26" fill="var(--md-default-fg-color--lightest)" />
                                       <rect x="270" y="520.5" width="507" height="341" rx="25.5" stroke="var(--md-default-fg-color--lighter)" stroke-opacity="0.2" />
@@ -121,7 +119,6 @@ search:
                                       </g>
                                       <rect x="278" y="527.5" width="491" height="327" rx="20.5" stroke="var(--md-default-fg-color--lighter)" stroke-opacity="0.2" />
                                   </g>
-                                </a>
                             </g>
 
                             <!-- Card 1: Flexspline (centered, same size as MITE L-shape) -->
@@ -135,18 +132,15 @@ search:
 
                             <!-- Card 2: FROTHED (centered, scaled 1.5x) -->
                             <g class="carousel-card" data-index="2" id="card-frothed" transform="translate(720, 512) scale(1.5) translate(-918, -760)">
-                                <a href="/projects/FROTHED">
                                   <g id="reading-card" class="project">
                                       <rect x="790.5" y="610" width="254" height="300" rx="33" fill="var(--md-default-fg-color--lightest)" />
                                       <rect x="791" y="610.5" width="253" height="299" rx="32.5" stroke="var(--md-default-fg-color--lighter)" stroke-opacity="0.2" />
                                       <image x="796.5" y="616" width="242" height="330" href="/assets/images/index/FROTHEDPrototypeV1.jpg" clip-path="url(#clipImageBook)" preserveAspectRatio="xMidYMid slice" alt="FROTHED Prototype project image" />
                                   </g>
-                                </a>
                             </g>
 
                             <!-- Card 3: Microbot (centered) -->
                             <g class="carousel-card" data-index="3" id="card-microbot" transform="translate(344, 156)">
-                                <a href="/Projects/Microbot/">
                                     <g id="image-card-4" class="project">
                                         <g clip-path="url(#clip1_107_71)">
                                             <rect x="142" y="212" width="468" height="288" rx="26" fill="var(--md-default-fg-color--lightest)" />
@@ -155,7 +149,6 @@ search:
                                         </g>
                                         <rect x="143.5" y="212.5" width="466" height="287" rx="24.5" fill="none" stroke="var(--md-default-fg-color--lighter)" stroke-opacity="0.2" />
                                     </g>
-                                </a>
                             </g>
 
                             <!-- Card 4: MITE/Harmonic Actuator (centered) -->
