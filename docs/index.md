@@ -189,7 +189,7 @@ search:
           class="company">BLOX</p></a><p class="role">Mechanical Engineering Intern</p><p class="year"><span class="mobileyear">May </span>2024<span class="mobileyear"> - July 2024</span></p>
         <hr/>
         <a target=”_blank” href="https://www.instagram.com/uaecocar/">
-          <img class="companylogo" src="assets\images\index\logos\ECOCAR.png" alt="Tone logo"><p class="company">EcoCAR EV Challenge</p></a><p class="role">Controls Team Lead</p><p class="year"><span class="mobileyear">Aug 2022 - Sept </span>2023</p>
+          <img class="companylogo" src="assets\images\index\logos\ECOCAR.png" alt="Tone logo"><p class="company">EcoCAR EV Challenge</p></a><p class="role">Controls Team Lead</p><p class="year"><span class="mobileyear">Aug 2022 - Jan </span>2024</p>
         <hr/>
         <a target=”_blank” href="https://www.michelinman.com/">
           <img class="companylogo" src="assets/images/index/logos/MICHELIN.jpg" alt="Autodesk logo"><p class="company">Michelin</p></a><p 
