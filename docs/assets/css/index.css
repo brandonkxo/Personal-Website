@@ -1595,3 +1595,81 @@ section {
     display: none;
   }
 }
+
+/* Clickable cards cursor */
+.carousel-card[data-clickable="true"] {
+  cursor: pointer;
+}
+
+/* Card Modal Popup */
+.card-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(4px);
+}
+
+.card-modal.active {
+  display: flex;
+}
+
+.card-modal-content {
+  background: var(--md-default-bg-color);
+  padding: 2rem;
+  border-radius: 16px;
+  max-width: 400px;
+  width: 90%;
+  position: relative;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.15);
+  animation: modalSlideIn 0.3s ease;
+}
+
+@keyframes modalSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card-modal-close {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--md-default-fg-color);
+  opacity: 0.6;
+  transition: opacity 0.2s ease;
+}
+
+.card-modal-close:hover {
+  opacity: 1;
+}
+
+.card-modal-content h3 {
+  margin: 0 0 1rem 0;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 1.1rem;
+  color: var(--md-default-fg-color);
+}
+
+.card-modal-content p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--md-default-fg-color);
+  opacity: 0.85;
+}

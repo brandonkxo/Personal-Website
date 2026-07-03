@@ -172,6 +172,68 @@ document.addEventListener("DOMContentLoaded", function() {
         // Initialize with first card (Deshazo)
         showCard(0);
     }
+
+    // Card Modal Popup functionality
+    const cardDescriptions = {
+        'card-apptronik': {
+            title: 'Flexspline',
+            description: 'A custom harmonic drive flexspline designed for high torque density applications. Machined from steel with precise tooth geometry for smooth power transmission.'
+        },
+        'card-frothed': {
+            title: 'FROTHED',
+            description: 'An automated matcha preparation system. Combines precise powder dispensing with traditional whisking techniques to create consistent, high-quality matcha.'
+        },
+        'card-microbot': {
+            title: 'Microbot',
+            description: 'A compact 6-DOF robotic arm designed for desktop automation. Features custom motor controllers and a lightweight aluminum structure.'
+        },
+        'card-mite': {
+            title: 'Torque-Sensing Board',
+            description: 'A custom PCB for measuring torque in robotic joints. Integrates strain gauge amplification with CAN bus communication for real-time feedback.'
+        }
+    };
+
+    const modal = document.getElementById('card-modal');
+    const modalTitle = document.getElementById('card-modal-title');
+    const modalDescription = document.getElementById('card-modal-description');
+    const modalClose = document.querySelector('.card-modal-close');
+
+    // Add click handlers to cards with popups (not Deshazo)
+    Object.keys(cardDescriptions).forEach(cardId => {
+        const card = document.getElementById(cardId);
+        if (card) {
+            card.setAttribute('data-clickable', 'true');
+            card.addEventListener('click', (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                const info = cardDescriptions[cardId];
+                modalTitle.textContent = info.title;
+                modalDescription.textContent = info.description;
+                modal.classList.add('active');
+            });
+        }
+    });
+
+    // Close modal handlers
+    if (modalClose) {
+        modalClose.addEventListener('click', () => {
+            modal.classList.remove('active');
+        });
+    }
+
+    if (modal) {
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.classList.remove('active');
+            }
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && modal.classList.contains('active')) {
+                modal.classList.remove('active');
+            }
+        });
+    }
 });
 
 var supportsCssVars = function() {

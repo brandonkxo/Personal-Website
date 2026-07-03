@@ -105,6 +105,7 @@ search:
                         <g id="carousel-cards" transform="translate(720, 512) scale(1.65) translate(-720, -512)">
                             <!-- Card 0: Deshazo video (centered) -->
                             <g class="carousel-card active" data-index="0" id="card-deshazo" transform="translate(196, -179)">
+                                <a href="https://www.deshazo.com/automation" target="_blank">
                                   <g id="image-card-2" class="project">
                                       <rect x="269.5" y="520" width="508" height="342" rx="26" fill="var(--md-default-fg-color--lightest)" />
                                       <rect x="270" y="520.5" width="507" height="341" rx="25.5" stroke="var(--md-default-fg-color--lighter)" stroke-opacity="0.2" />
@@ -119,6 +120,7 @@ search:
                                       </g>
                                       <rect x="278" y="527.5" width="491" height="327" rx="20.5" stroke="var(--md-default-fg-color--lighter)" stroke-opacity="0.2" />
                                   </g>
+                                </a>
                             </g>
 
                             <!-- Card 1: Flexspline (centered, same size as MITE L-shape) -->
@@ -206,6 +208,15 @@ search:
     </section>
     <div class="page-spacer"></div>
     <h1 style="display:none;">Engineering Portfolio - Mechanical Design & Hardware Development</h1>
+  </div>
+
+  <!-- Project Card Modal -->
+  <div id="card-modal" class="card-modal">
+    <div class="card-modal-content">
+      <button class="card-modal-close">&times;</button>
+      <h3 id="card-modal-title"></h3>
+      <p id="card-modal-description"></p>
+    </div>
   </div>
   </main>
   <script>
