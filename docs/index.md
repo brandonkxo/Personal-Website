@@ -202,7 +202,7 @@ search:
     <section class="about">
       <div class="content4">
         <h2>About</h2>
-        <p class="abt1">Mechanical Engineer with a background in robotics and hardware.</p>
+        <p class="abt1">Mechanical Engineer with a background in robotics and hardware</p>
         <p class="abt2">I enjoy small teams and extreme ownership of my designs, from sketch to production</p>
       </div>
     </section>
