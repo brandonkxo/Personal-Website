@@ -1,0 +1,271 @@
+// Remove all SPIN animation preload code
+document.addEventListener("DOMContentLoaded", function() {
+    let lastScrollTop = 0;
+    let ticking = false;
+
+    var contentSections = document.querySelectorAll('.content-container > section');
+    var previousHeight = 0;
+
+    contentSections.forEach(function(section) {
+        section.style.top = previousHeight + 'px';
+        previousHeight += section.offsetHeight;
+    });
+
+    // Add staggered animations for experience items
+    const experienceItems = document.querySelectorAll('.content3 .company, .content3 .role, .content3 .year');
+    experienceItems.forEach((item, index) => {
+        item.style.animationDelay = `${index * 0.06}s`;
+    });
+
+    // Add staggered animations for project grid items
+    const projectItems = document.querySelectorAll('.content5 .grid-item');
+    projectItems.forEach((item, index) => {
+        item.style.animationDelay = `${index * 0.1}s`;
+    });
+
+    // Add staggered animations for writing items
+    const writingItems = document.querySelectorAll('.content6 .writparent');
+    writingItems.forEach((item, index) => {
+        item.style.animationDelay = `${index * 0.15}s`;
+    });
+
+    // Add intersection observer for scroll animations
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.animationPlayState = 'running';
+            }
+        });
+    }, {
+        threshold: 0.05,
+        rootMargin: '50px'
+    });
+
+    // Observe elements
+    document.querySelectorAll('.introabt, .featured-projects, .content3 hr, .company, .role, .year, .grid-item, .writparent').forEach(el => {
+        el.style.animationPlayState = 'paused';
+        observer.observe(el);
+    });
+
+    const scrollThreshold = 100;
+
+    window.addEventListener('scroll', function() {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        
+        if (scrollTop > scrollThreshold) {
+            document.body.classList.add('scrolled');
+        } else {
+            document.body.classList.remove('scrolled');
+        }
+        
+        lastScrollTop = scrollTop;
+    });
+
+    document.addEventListener('scroll', function() {
+        const scrollPosition = window.scrollY;
+        const blurOverlay = document.querySelector('.blur-overlay');
+        
+        if (blurOverlay) {
+            const opacity = Math.min(scrollPosition / 100, 1);
+            blurOverlay.style.opacity = opacity;
+        }
+    });
+
+    // Typing animation
+    const typedTextSpan = document.getElementById("typed");
+    const textArray = ["an Engineer", "a Maker", "a Life Enjoyer"];
+    const typingDelay = 50;
+    const erasingDelay = 30;
+    const newTextDelay = 1000;
+    let textArrayIndex = 0;
+    let charIndex = 0;
+    let isTyping = false;
+
+    // Create and style the cursor element
+    const cursor = document.createElement('span');
+    cursor.className = 'typing-cursor';
+    cursor.style.display = 'inline-block';
+    cursor.style.width = '2px';
+    cursor.style.height = '1em';
+    cursor.style.backgroundColor = 'currentColor';
+    cursor.style.animation = 'blink 0.7s infinite';
+
+    function updateText() {
+        typedTextSpan.innerHTML = textArray[textArrayIndex].substring(0, charIndex) + '<span class="typing-cursor"></span>';
+    }
+
+    function type() {
+        if (!isTyping) {
+            isTyping = true;
+            if (charIndex < textArray[textArrayIndex].length) {
+                charIndex++;
+                updateText();
+                setTimeout(() => {
+                    isTyping = false;
+                    type();
+                }, typingDelay);
+            } else {
+                isTyping = false;
+                setTimeout(erase, newTextDelay);
+            }
+        }
+    }
+
+    function erase() {
+        if (charIndex > 0) {
+            charIndex--;
+            updateText();
+            setTimeout(erase, erasingDelay);
+        } else {
+            textArrayIndex++;
+            if (textArrayIndex >= textArray.length) textArrayIndex = 0;
+            setTimeout(type, typingDelay + 500);
+        }
+    }
+
+    if (typedTextSpan) {
+        updateText();
+        setTimeout(type, newTextDelay + 250);
+    }
+
+    // Add video element for spin animation
+    const spinElement = document.getElementById('spin-animation');
+    if (spinElement) {
+        spinElement.innerHTML = `
+            <video
+                autoplay
+                loop
+                muted
+                playsinline
+                style="width: 100%; height: 100%; object-fit: contain;"
+            >
+                <source src="assets/images/index/spin_transparent.webm" type="video/webm">
+            </video>
+        `;
+    }
+
+
+    // Carousel functionality
+    const carouselCards = document.querySelectorAll('.carousel-card');
+    const prevBtn = document.querySelector('.carousel-prev');
+    const nextBtn = document.querySelector('.carousel-next');
+    let currentIndex = 0;
+
+    function showCard(index) {
+        carouselCards.forEach((card, i) => {
+            card.classList.toggle('active', i === index);
+        });
+        currentIndex = index;
+    }
+
+    if (prevBtn && nextBtn && carouselCards.length > 0) {
+        prevBtn.addEventListener('click', () => {
+            const newIndex = (currentIndex - 1 + carouselCards.length) % carouselCards.length;
+            showCard(newIndex);
+        });
+
+        nextBtn.addEventListener('click', () => {
+            const newIndex = (currentIndex + 1) % carouselCards.length;
+            showCard(newIndex);
+        });
+
+        // Initialize with first card (Deshazo)
+        showCard(0);
+    }
+
+    // Card Modal Popup functionality
+    const cardDescriptions = {
+        'card-apptronik': {
+            title: 'Flexspline',
+            description: 'Developed custom S-tooth design software for my harmonic drive actuator. Open-sourced it here: <a href="https://www.harmonicgearboxcalculator.com" target="_blank">harmonicgearboxcalculator.com</a>'
+        },
+        'card-frothed': {
+            title: 'FROTHED',
+            description: 'Designed the world\'s first automatic matcha maker, from sketch to prototype in 2 months. Delivered demos to investors, accelerators, etc.'
+        },
+        'card-microbot': {
+            title: 'Microbot',
+            description: 'A compact 6-DOF robotic arm designed for desktop automation. Printed in PETG with low cost controllers and motors (because I was a broke college student).'
+        },
+        'card-mite': {
+            title: 'Torque-Sensing Board',
+            description: 'An STM32 based board for measuring torque in robotic joints. Integrates strain gauge amplification with CAN bus communication for real-time torque feedback.'
+        }
+    };
+
+    const modal = document.getElementById('card-modal');
+    const modalTitle = document.getElementById('card-modal-title');
+    const modalDescription = document.getElementById('card-modal-description');
+    const modalClose = document.querySelector('.card-modal-close');
+
+    // Add click handlers to cards with popups (not Deshazo)
+    Object.keys(cardDescriptions).forEach(cardId => {
+        const card = document.getElementById(cardId);
+        if (card) {
+            card.setAttribute('data-clickable', 'true');
+            card.addEventListener('click', (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                const info = cardDescriptions[cardId];
+                modalTitle.textContent = info.title;
+                modalDescription.innerHTML = info.description;
+                modal.classList.add('active');
+            });
+        }
+    });
+
+    // Close modal handlers
+    if (modalClose) {
+        modalClose.addEventListener('click', () => {
+            modal.classList.remove('active');
+        });
+    }
+
+    if (modal) {
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.classList.remove('active');
+            }
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && modal.classList.contains('active')) {
+                modal.classList.remove('active');
+            }
+        });
+    }
+});
+
+var supportsCssVars = function() {
+    var e, t = document.createElement("style");
+    return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e
+};
+supportsCssVars() || alert("Please view this page in a modern browser that supports CSS Variables :).");
+
+function togglemenu() {
+    var element = document.body;
+    element.classList.toggle("toggle");
+    element.classList.add("scrollUp");
+}
+
+function leftrevon() {
+    var element = document.querySelector('.circleGroup');
+    if (element) {
+        element.style.setProperty('--rotation-direction', 'normal');
+    }
+}
+
+function leftrevoff() {
+    var element = document.querySelector('.circleGroup');
+    if (element) {
+        element.style.setProperty('--rotation-direction', 'reverse');
+    }
+}
+
+// Only set up rotation handlers if the element exists
+var abtbtnElement = document.querySelector('.abtbtn');
+if (abtbtnElement) {
+    leftrevon();
+    abtbtnElement.addEventListener('mouseenter', leftrevoff);
+    abtbtnElement.addEventListener('mouseleave', leftrevon);
+}
